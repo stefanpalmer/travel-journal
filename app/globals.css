@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -18,4 +20,55 @@ body {
   font-family: 'Solitreo', cursive;
   font-size: 32px;
   letter-spacing: 0.35rem;
+}
+
+.body-contain {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.entry-contain {
+  width: 50%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry-contain img {
+  width: 90%;
+  height: 60%;
+  border: 5px dashed #AE8E1C;
+}
+
+.entry-text {
+  width: 90%;
+  height: 40%;
+  position: relative;
+  color: #36311F;
+}
+
+.entry-text h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.entry-text p {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
+.entry-text a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+  letter-spacing: 1.8px;
+  font-size: 13px;
+  color: #36311F;
+  background-color: rgba(174, 142, 28, .5); 
+  padding: 1px;
+  position: absolute;
+  top: 60%;
 }
