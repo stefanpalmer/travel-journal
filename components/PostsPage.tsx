@@ -1,5 +1,6 @@
 import {Post} from '../typings';
 import urlFor from "../lib/urlFor";
+import { PortableText } from '@portabletext/react';
 
 type Props = {
     posts: Post[];
@@ -13,8 +14,8 @@ function PostsPage({ posts }: Props) {
                     <img src={urlFor(post.mainImage).url()} alt="" />
                     <div className="entry-text">
                         <h4>{post.title}</h4>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quidem commodi rem. Magnam similique delectus, vero reiciendis assumenda molestias doloribus vitae amet corporis, deleniti hic quia sit at quisquam repudiandae.
+                        <div className="shorten-text">
+                            <PortableText value={post.body} />
                         </div>
                         <a href="#">Read Post</a>
                     </div>

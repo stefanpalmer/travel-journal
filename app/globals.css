@@ -51,6 +51,8 @@ body {
 
 .entry-text h4 {
   font-family: 'Merriweather Sans', sans-serif;
+  position: absolute;
+  top: 0;
 }
 
 .entry-text p {
@@ -58,6 +60,15 @@ body {
   font-size: 14px;
   line-height: 23px;
   letter-spacing: 1px;
+}
+
+.shorten-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: absolute;
+  top: 20%;
 }
 
 .entry-text a {
@@ -70,5 +81,12 @@ body {
   background-color: rgba(174, 142, 28, .5); 
   padding: 1px;
   position: absolute;
-  top: 60%;
+  top: 65%;
+}
+
+@media (max-width: 768px) {
+
+  .entry-contain {
+    width: 100%;
+  }
 }
