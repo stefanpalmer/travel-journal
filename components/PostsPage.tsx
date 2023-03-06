@@ -1,6 +1,8 @@
 import {Post} from '../typings';
 import urlFor from "../lib/urlFor";
 import { PortableText } from '@portabletext/react';
+import ClientSideRoute from "./ClientSideRoute";
+
 
 type Props = {
     posts: Post[];
@@ -17,7 +19,9 @@ function PostsPage({ posts }: Props) {
                         <div className="shorten-text">
                             <PortableText value={post.body} />
                         </div>
-                        <a href="#">Read Post</a>
+                        <ClientSideRoute route={`/post/${post.slug.current}`}>
+                            Read Post
+                        </ClientSideRoute>
                     </div>
                 </div>
             ))}
